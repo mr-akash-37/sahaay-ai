@@ -1,0 +1,15 @@
+{
+  // Hide generated and tool folders so the Explorer shows only the project's own code.
+  "files.exclude": {
+    ".next": true,
+    "node_modules": true,
+    ".claude": true,
+    ".vercel": true,
+    "playwright-report": true,
+    "test-results": true,
+    "tsconfig.tsbuildinfo": true,
+    "next-env.d.ts": true
+  },
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 16
+}

@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/*
+ * Sahaay AI design tokens.
+ * Brand: primary #0F4C81, success #2E7D32, warning #ED8B00, background #FAFAF7.
+ * "-strong" variants are darker shades used for text so it meets WCAG AA contrast.
+ */
+:root {
+  --background: #fafaf7;
+  --foreground: #1a1a1a;
+  --muted: #f1f0eb;
+  --muted-foreground: #5f6368;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --border: #e4e2da;
+
+  --primary: #0f4c81;
+  --primary-foreground: #ffffff;
+  --primary-soft: #e8f0f8;
+
+  --success: #2e7d32;
+  --success-strong: #1e5e22;
+  --success-soft: #e8f3e9;
+
+  --warning: #ed8b00;
+  --warning-strong: #8a5100;
+  --warning-soft: #fdf1e0;
+
+  --danger: #c62828;
+  --danger-soft: #fbe9e9;
+
+  --ring: #0f4c81;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101418;
+    --foreground: #eceae4;
+    --muted: #1b2128;
+    --muted-foreground: #a3a9b0;
+    --card: #161c22;
+    --card-foreground: #eceae4;
+    --border: #2a323b;
+
+    --primary: #6ea8dc;
+    --primary-foreground: #0b1620;
+    --primary-soft: #16283a;
+
+    --success: #6cc070;
+    --success-strong: #8fd492;
+    --success-soft: #16291a;
+
+    --warning: #f2a93b;
+    --warning-strong: #f2b45c;
+    --warning-soft: #2e2213;
+
+    --danger: #ef6f6f;
+    --danger-soft: #331819;
+
+    --ring: #6ea8dc;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-success-strong: var(--success-strong);
+  --color-warning: var(--warning);
+  --color-warning-strong: var(--warning-strong);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-inter), var(--font-kannada), var(--font-devanagari), ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Kannada and Devanagari scripts need extra line height to stay readable. */
+:lang(kn),
+:lang(hi) {
+  line-height: 1.7;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Simple mode: everything ~12% bigger (Tailwind sizes are rem-based) and stronger text contrast. */
+html.simple {
+  font-size: 112.5%;
+}
+html.simple:root {
+  --muted-foreground: #3c4043;
+  --border: #c9c6bb;
+}
+@media (prefers-color-scheme: dark) {
+  html.simple:root {
+    --muted-foreground: #d5d9de;
+    --border: #4a5560;
+  }
+}
+
+/* Printable checklist: hide navigation and interactive-only parts. */
+@media print {
+  header,
+  nav,
+  footer,
+  aside,
+  .no-print,
+  [role="dialog"] {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  main {
+    padding: 0 !important;
+  }
+  details {
+    break-inside: avoid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

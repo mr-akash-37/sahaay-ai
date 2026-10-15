@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "title": "Sahaay AI — Find the welfare schemes you qualify for",
+    "description": "Answer a few simple questions or describe your situation. Sahaay AI finds the government schemes you are eligible for, explains why, and tells you exactly what to do next."
+  },
+  "common": {
+    "appName": "Sahaay AI",
+    "tagline": "The right scheme. The right guidance. For you.",
+    "skipToContent": "Skip to main content",
+    "tryAgain": "Try again",
+    "goHome": "Go to home page",
+    "loading": "Loading…",
+    "language": "Language",
+    "offline": "You are offline. Your saved answers and checklist still work.",
+    "installTitle": "Install Sahaay AI",
+    "installBody": "Add it to your home screen and open it like an app.",
+    "installButton": "Install"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "schemes": "My Schemes",
+    "roadmap": "Roadmap",
+    "assistant": "Assistant",
+    "profile": "Profile",
+    "check": "Check eligibility"
+  },
+  "landing": {
+    "heroBadge": "Free · No sign-up needed",
+    "heroTitle": "Find the government schemes you deserve",
+    "heroSubtitle": "For students, farmers, workers, women, business owners and senior citizens. Answer a few questions or describe your situation — we show what you can get, why, and what to do next.",
+    "ctaPrimary": "Check my eligibility",
+    "ctaSecondary": "How it works",
+    "ctaNote": "Takes about 2 minutes. Your answers stay private.",
+    "howTitle": "How it works",
+    "step1Title": "Tell us about yourself",
+    "step1Body": "Answer simple questions, or just type or speak your situation in your own words.",
+    "step2Title": "See your matches",
+    "step2Body": "We check every rule and show clearly why you match or not.",
+    "step3Title": "Follow your roadmap",
+    "step3Body": "Know which documents to get, where to get them, and your deadlines.",
+    "featuresTitle": "Built to help you, not confuse you",
+    "featureMatchTitle": "Clear match score",
+    "featureMatchBody": "See which rules you meet and what is still missing. No guessing.",
+    "featureDocsTitle": "Document helper",
+    "featureDocsBody": "Learn what each certificate is, who issues it, and where to get it.",
+    "featureDeadlineTitle": "Alerts",
+    "featureDeadlineBody": "Sign in to get notified when a new scheme matches you.",
+    "featureLanguageTitle": "Your language, your voice",
+    "featureLanguageBody": "Use Sahaay AI in English, Kannada or Hindi — type or speak.",
+    "featureTrustTitle": "Verified information",
+    "featureTrustBody": "Every scheme shows its official source and when it was last checked.",
+    "featureAssistantTitle": "Friendly assistant",
+    "featureAssistantBody": "Ask questions in your own words and get simple answers.",
+    "statsLabel": "Central government schemes for every state and union territory, plus state schemes — for students, farmers, workers, women, entrepreneurs and senior citizens.",
+    "exampleLabel": "Example result",
+    "exampleScheme": "Post-matric scholarship",
+    "exampleMatch": "profile match",
+    "exampleMet1": "Scheduled Caste (SC)",
+    "exampleMet2": "Undergraduate student",
+    "exampleMet3": "Family income within limit",
+    "exampleMissing": "Income certificate needed",
+    "exampleNext": "Next step: get your income certificate",
+    "ctaBandTitle": "Ready to find your schemes?",
+    "ctaBandBody": "No sign-up. No documents needed to start."
+  },
+  "safety": {
+    "title": "Stay safe",
+    "disclaimer": "Sahaay AI is a guidance tool, not a government service. The final decision is made by the department that runs the scheme.",
+    "noPayment": "Applying for government schemes is free. Never pay anyone or share your OTP."
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "body": "Sorry, this page could not load. Please try again.",
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "We could not find this page. It may have moved."
+  },
+  "pages": {
+    "check": "Check eligibility",
+    "results": "My Schemes",
+    "roadmap": "My Roadmap",
+    "assistant": "Sahaay Assistant",
+    "settings": "Profile & settings"
+  },
+  "wizard": {
+    "progress": "Question {current} of {total}",
+    "back": "Back",
+    "next": "Next",
+    "finish": "See my schemes",
+    "dontKnow": "I don't know",
+    "preferNotToSay": "Prefer not to say",
+    "yes": "Yes",
+    "no": "No",
+    "chooseOne": "Please choose one answer to continue.",
+    "chooseFromList": "Choose from the list",
+    "agePlaceholder": "Age in years",
+    "ageError": "Please enter an age between 0 and 120.",
+    "privacy": "Your answers are saved only on this device.",
+    "q": {
+      "occupation": {
+        "title": "What do you do?",
+        "help": "Choose what fits you best. This helps us find the right schemes."
+      },
+      "age": {
+        "title": "How old are you?",
+        "help": "Many schemes depend on age."
+      },
+      "gender": {
+        "title": "What is your gender?",
+        "help": "Some schemes are only for women."
+      },
+      "state": {
+        "title": "Which state or union territory do you live in?",
+        "help": "Central schemes are for everyone in India. State schemes are only for people who live in that state."
+      },
+      "areaType": {
+        "title": "Do you live in a village or in a town/city?",
+        "help": "Some housing schemes are only for towns and cities."
+      },
+      "category": {
+        "title": "Which category do you belong to?",
+        "help": "As written on your caste certificate. Choose \"I don't know\" if you are not sure."
+      },
+      "kaBackwardClass": {
+        "title": "Which Backward Class category are you in, in Karnataka's list?",
+        "help": "Written on your Karnataka caste certificate. Choose \"I don't know\" if you are not sure."
+      },
+      "incomeBand": {
+        "title": "What is your family's total income per year?",
+        "help": "Add up the income of everyone in your household. A close estimate is fine."
+      },
+      "educationLevel": {
+        "title": "What are you studying now?",
+        "help": "Choose the course you are in this academic year."
+      },
+      "parentFarmer": {
+        "title": "Is your parent a farmer who owns land?",
+        "help": "Some scholarships are only for children of farmers."
+      },
+      "class12Above80Percentile": {
+        "title": "Was your Class 12 result in the top 20% of your board?",
+        "help": "This is called the 80th percentile. Your board's result list can tell you."
+      },
+      "inGovernmentHostel": {
+        "title": "Are you staying in a government hostel this year?",
+        "help": "Some help is only for students who did not get a hostel seat."
+      },
+      "ownsFarmland": {
+        "title": "Does your family own farmland?",
+        "help": "Land in your name or a family member's name in the land records (RTC)."
+      },
+      "businessStage": {
+        "title": "Is your business new or already running?",
+        "help": "Some loans are only for starting a new business."
+      },
+      "ownIncomeUpTo15kMonth": {
+        "title": "Is your own monthly income ₹15,000 or less?",
+        "help": "Count only what you earn yourself, not your family."
+      },
+      "coveredByEpfEsiNps": {
+        "title": "Is PF, ESI or government NPS deducted from your pay?",
+        "help": "If your employer cuts PF (EPF) or ESI from your salary, choose Yes."
+      },
+      "unemployedGraduate": {
+        "title": "Did you finish a degree or diploma and still have no job 6 months after passing?",
+        "help": "Self-employment and apprenticeship pay count as having work."
+      },
+      "womanHeadOfFamily": {
+        "title": "Are you named as the head of the family on your ration card?",
+        "help": "Look for 'head of family' (yajamani) on the card."
+      },
+      "familyFilesGst": {
+        "title": "Does your family file GST returns?",
+        "help": "Usually only families that run a registered business."
+      },
+      "familyPaysIncomeTax": {
+        "title": "Does anyone in your family pay income tax?",
+        "help": "Some schemes are not for income tax payers. Choose \"I don't know\" if you are not sure."
+      },
+      "selfPaysIncomeTax": {
+        "title": "Do you yourself pay income tax?",
+        "help": "Some pension schemes are only for people who don't pay income tax."
+      },
+      "familyGovtEmployee": {
+        "title": "Does anyone in your family work in government service or get a government pension?",
+        "help": "Some schemes are not for families of government employees."
+      },
+      "ownsPuccaHouse": {
+        "title": "Does anyone in your family own a pucca (permanent) house anywhere in India?",
+        "help": "A pucca house has permanent walls and a permanent roof."
+      },
+      "bplHousehold": {
+        "title": "Is your family on the BPL (below poverty line) list?",
+        "help": "For example, if you have a BPL or Antyodaya (AAY) ration card. Choose \"I don't know\" if you are not sure."
+      },
+      "hasDaughterUnder10": {
+        "title": "Do you have a daughter younger than 10 years?",
+        "help": "There is a special savings scheme for young daughters."
+      }
+    },
+    "occupation": {
+      "student": "Student",
+      "farmer": "Farmer",
+      "farm_labourer": "Farm labourer",
+      "business_owner": "Running or starting a business",
+      "artisan": "Artisan / craftsperson (tailor, carpenter, potter…)",
+      "unorganised_worker": "Daily-wage, construction or domestic worker",
+      "salaried_private": "Private job (salaried)",
+      "govt_employee": "Government employee",
+      "job_seeker": "Looking for a job",
+      "homemaker": "Homemaker",
+      "retired": "Retired / senior citizen"
+    },
+    "gender": {
+      "female": "Woman",
+      "male": "Man",
+      "other": "Other"
+    },
+    "area": {
+      "rural": "Village (rural)",
+      "urban": "Town or city (urban)"
+    },
+    "businessStage": {
+      "new": "Starting a new business",
+      "existing": "Already running"
+    },
+    "education": {
+      "class_8_10": "Class 8 to 10",
+      "puc": "PUC / Class 11–12",
+      "diploma_iti": "Diploma or ITI",
+      "ug": "Degree (BA, BSc, BCom, BE…)",
+      "pg": "Postgraduate (MA, MSc, MBA…)",
+      "not_studying": "Not studying now"
+    },
+    "category": {
+      "sc": "Scheduled Caste (SC)",
+      "st": "Scheduled Tribe (ST)",
+      "obc": "Other Backward Class (OBC)",
+      "general": "General / other"
+    },
+    "income": {
+      "upto_1l": "Up to ₹1 lakh",
+      "1l_2_5l": "₹1 – 2.5 lakh",
+      "2_5l_3l": "₹2.5 – 3 lakh",
+      "3l_4_5l": "₹3 – 4.5 lakh",
+      "4_5l_6l": "₹4.5 – 6 lakh",
+      "6l_9l": "₹6 – 9 lakh",
+      "above_9l": "More than ₹9 lakh"
+    },
+    "kaBackwardClass": {
+      "cat_1": "Category 1",
+      "cat_2a": "Category 2A",
+      "cat_3a": "Category 3A",
+      "cat_3b": "Category 3B"
+    },
+    "states": {
+      "ap": "Andhra Pradesh",
+      "ar": "Arunachal Pradesh",
+      "as": "Assam",
+      "br": "Bihar",
+      "cg": "Chhattisgarh",
+      "ga": "Goa",
+      "gj": "Gujarat",
+      "hr": "Haryana",
+      "hp": "Himachal Pradesh",
+      "jh": "Jharkhand",
+      "ka": "Karnataka",
+      "kl": "Kerala",
+      "mp": "Madhya Pradesh",
+      "mh": "Maharashtra",
+      "mn": "Manipur",
+      "ml": "Meghalaya",
+      "mz": "Mizoram",
+      "nl": "Nagaland",
+      "od": "Odisha",
+      "pb": "Punjab",
+      "rj": "Rajasthan",
+      "sk": "Sikkim",
+      "tn": "Tamil Nadu",
+      "ts": "Telangana",
+      "tr": "Tripura",
+      "up": "Uttar Pradesh",
+      "uk": "Uttarakhand",
+      "wb": "West Bengal",
+      "an": "Andaman and Nicobar Islands",
+      "ch": "Chandigarh",
+      "dh": "Dadra and Nagar Haveli and Daman and Diu",
+      "dl": "Delhi",
+      "jk": "Jammu and Kashmir",
+      "la": "Ladakh",
+      "ld": "Lakshadweep",
+      "py": "Puducherry"
+    }
+  },
+  "describe": {
+    "tabSteps": "Answer step by step",
+    "tabWords": "Describe in my words",
+    "title": "Tell us about yourself",
+    "body": "Write or speak a few lines in English, ಕನ್ನಡ or हिन्दी. For example:",
+    "example": "I am a 45-year-old farmer from Mandya with 2 acres of land. Our family income is about 1.5 lakh a year.",
+    "label": "Your situation",
+    "placeholder": "Type here…",
+    "speak": "Speak",
+    "stop": "Stop",
+    "listening": "Listening… speak now",
+    "voiceUnavailable": "Voice typing doesn't work in this browser. Please use Google Chrome or Microsoft Edge, or type instead.",
+    "analyse": "Understand my situation",
+    "analysing": "Understanding…",
+    "understood": "Here is what we understood. Please check:",
+    "nothingFound": "We couldn't pick up details from that. Try adding your age, your work and where you live — or answer step by step.",
+    "useThese": "Yes, this is right — continue",
+    "edit": "Change something",
+    "aiNote": "Read by AI. Please check before continuing.",
+    "rulesNote": "Read automatically from your words. Please check before continuing.",
+    "privacyNote": "Don't write your name, phone, Aadhaar or bank numbers.",
+    "tooLong": "Please keep it under 1000 characters.",
+    "voiceDenied": "Microphone access is blocked. Tap the lock icon next to the web address, allow the microphone, then try again.",
+    "voiceNoMic": "We couldn't find a working microphone. Check that one is connected and not used by another app.",
+    "voiceNoSpeech": "We didn't hear anything. Tap Speak and talk clearly, close to the microphone.",
+    "voiceNetwork": "Voice typing needs an internet connection and works best in Google Chrome. Please check your connection or type instead.",
+    "voiceLanguage": "This browser can't understand this language by voice yet. Try Google Chrome, or switch language at the top, or type instead."
+  },
+  "results": {
+    "title": "My Schemes",
+    "subtitle": "Based on your answers. Every rule is checked — nothing is guessed.",
+    "eligible": "Eligible",
+    "likely_eligible": "Likely eligible",
+    "not_eligible": "Not eligible",
+    "groupEligible": "You can apply",
+    "groupLikely": "Probably yes — some answers are missing",
+    "groupNotEligible": "Not a match right now",
+    "showNotEligible": "Show schemes that don't match ({count})",
+    "match": "profile match",
+    "confidence_high": "High confidence",
+    "confidence_medium": "Medium confidence",
+    "confidence_low": "Low confidence",
+    "satisfied": "Meets",
+    "not_satisfied": "Doesn't meet",
+    "unknown": "Not sure yet",
+    "not_applicable": "Doesn't apply",
+    "details": "Details & how to apply",
+    "editAnswers": "Edit my answers",
+    "emptyTitle": "No answers yet",
+    "emptyBody": "Answer a few simple questions to see which schemes fit you.",
+    "start": "Start now",
+    "summary": "{eligible} eligible · {likely} likely",
+    "whyNot": "Why not",
+    "needToKnow": "We still need to know",
+    "noneTitle": "No matching schemes yet",
+    "noneBody": "We are adding more schemes. You can also update your answers.",
+    "roadmapCta": "See my step-by-step roadmap",
+    "nextStep": "Your next step",
+    "stateNote": "We checked every central scheme for you. We don't have {state} government schemes yet — you can also search them on myScheme, the official national portal.",
+    "stateNoteLink": "Search {state} schemes on myScheme"
+  },
+  "trust": {
+    "verified": "Verified",
+    "partially_verified": "Partially verified",
+    "needs_review": "Needs review",
+    "lastReviewed": "Last reviewed {date}",
+    "explain": "Rules checked against public sources. Please confirm on the official portal before applying."
+  },
+  "deadline": {
+    "unknown": "Deadline not announced — check the official portal",
+    "critical": "Due in {days} days",
+    "upcoming": "Due in {days} days",
+    "open": "Open — due in {days} days",
+    "closed": "Closed"
+  },
+  "scheme": {
+    "back": "Back to my schemes",
+    "allSchemes": "All schemes",
+    "allSchemesSubtitle": "Central schemes for all of India, and state schemes, in Sahaay AI.",
+    "state": "{state} government scheme",
+    "central": "Central government scheme",
+    "benefit": "What you get",
+    "eligibility": "Who can apply",
+    "yourResult": "Your result",
+    "checkMine": "Check if I'm eligible",
+    "documents": "Documents you need",
+    "howToApply": "How to apply",
+    "applyOn": "Apply on {portal}",
+    "sources": "Official sources",
+    "note": "Please note",
+    "opensNewTab": "(opens in a new tab)",
+    "stateGeneric": "State government scheme"
+  },
+  "documents": {
+    "why": "Why it's needed",
+    "issuer": "Who issues it",
+    "where": "Where to get it",
+    "prerequisites": "What to bring",
+    "time": "Time taken varies by office — apply early.",
+    "official": "Official website",
+    "have": "I have it",
+    "applying": "Applied",
+    "missing": "Not yet",
+    "statusLabel": "Do you have this document?",
+    "neededFor": "Needed for {count} schemes"
+  },
+  "roadmap": {
+    "title": "My Roadmap",
+    "subtitle": "Follow these steps in order. Mark documents as you get them.",
+    "today": "Today",
+    "progress": "{done} of {total} documents ready",
+    "getDocs": "Get your documents",
+    "apply": "Apply",
+    "applyFor": "Apply for {scheme}",
+    "risksTitle": "Things that could stop you",
+    "risk_high": "High",
+    "risk_medium": "Medium",
+    "risk_low": "Low",
+    "riskDocMissingSlow": "Get this soon — office certificates can take time.",
+    "riskDocApplyingSlow": "In progress — follow up with the office.",
+    "riskDocMissing": "Quick to arrange, but don't forget it.",
+    "riskUnknown": "Answer this to be sure you qualify.",
+    "noRisks": "No blockers found. You are ready to apply!",
+    "emptyTitle": "Your roadmap will appear here",
+    "emptyBody": "First, tell us about yourself so we can find your schemes.",
+    "noSchemesTitle": "No schemes to plan for yet",
+    "noSchemesBody": "None of our schemes match your answers right now. Try updating your answers."
+  },
+  "settings": {
+    "title": "Profile & settings",
+    "language": "Language",
+    "dataTitle": "Your saved answers",
+    "dataBody": "Your answers and document checklist are saved only in this browser. Nothing is sent to a server.",
+    "dataBodySignedIn": "Your answers and document checklist are saved in this browser and in your account, so you can use them on any device.",
+    "edit": "Edit my answers",
+    "delete": "Delete my data",
+    "deleteConfirm": "Delete all saved answers on this device? This cannot be undone.",
+    "deleted": "Your data has been deleted from this device.",
+    "noData": "You have no saved answers.",
+    "answers": "Your answers",
+    "notAnswered": "Not answered",
+    "aboutTitle": "About Sahaay AI",
+    "aboutBody": "Sahaay AI helps you find government schemes you may qualify for. Eligibility is checked using fixed rules, never guessed by AI."
+  },
+  "assistant": {
+    "title": "Sahaay Assistant",
+    "intro": "Ask me about schemes, documents or next steps — in English, ಕನ್ನಡ or हिन्दी. You can also tell me about yourself and I'll find your schemes.",
+    "placeholder": "Type your question or describe your situation…",
+    "send": "Send",
+    "thinking": "Thinking…",
+    "you": "You",
+    "bot": "Sahaay",
+    "error": "Sorry, something went wrong. Please try again.",
+    "modeBasic": "Answers come straight from our verified scheme data.",
+    "modeAi": "AI answers use only our verified scheme data. Always confirm on the official portal.",
+    "sWhich": "Which schemes can I get?",
+    "sDocs": "Which documents do I need first?",
+    "sNext": "What should I do next?",
+    "sSafe": "Do I have to pay anyone to apply?",
+    "applyProfile": "Use these answers",
+    "profileUpdated": "Done! Your answers are updated.",
+    "openResults": "See my schemes",
+    "clear": "Clear chat",
+    "noProfile": "I don't know about you yet. Tell me about yourself (your age, your work and where you live), or answer a few questions.",
+    "listIntro": "Based on your answers, you can apply for {count} scheme(s):",
+    "likelyIntro": "You may also qualify for these (some answers are missing):",
+    "noneMatch": "No scheme matches your answers yet. You can update your answers, or check back later as we add more schemes.",
+    "whyIntro": "{scheme} — here is how your answers match:",
+    "docsFor": "For {scheme} you need:",
+    "docsFirst": "Documents to get first (needed for most of your schemes):",
+    "howFor": "How to apply for {scheme}:",
+    "nextStep": "Your next step: get your {doc}. Where: {where}",
+    "nextAllDone": "You have all your documents. Now apply — start with {scheme} on {portal}.",
+    "safety": "Applying for government schemes is free. Never pay an agent, and never share your OTP, PIN or bank password. Use only the official portals shown on each scheme.",
+    "deadline": "We don't have a verified deadline for {scheme}. Please check {portal}.",
+    "fallback": "I can help with: which schemes you can get, why you qualify, which documents you need, how to apply, and your next step. Try one of the suggestions below.",
+    "detected": "Thanks! From what you wrote, I understood:",
+    "askNext": "To find the right schemes for you, one quick question:",
+    "foundSoFar": "{count} scheme(s) already match you.",
+    "doneAsking": "That's all I need. Here are the schemes for you:",
+    "showNow": "Show my schemes now",
+    "typeAge": "Type your age as a number below, or choose an option.",
+    "changeAnswers": "Change my answers",
+    "sExample": "I'm a farmer and need support for my crops",
+    "resultsEmpty": "No scheme matches yet. I'll keep looking as new schemes are added.",
+    "openButton": "Ask Sahaay",
+    "close": "Close assistant"
+  },
+  "tracker": {
+    "label": "Application status",
+    "not_started": "Not started",
+    "preparing": "Preparing documents",
+    "applied": "Applied",
+    "under_review": "Under review",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "speech": {
+    "read": "Read aloud",
+    "stop": "Stop reading"
+  },
+  "simple": {
+    "title": "Simple mode",
+    "body": "Bigger text and stronger colours — easier to read.",
+    "toggle": "Use simple mode"
+  },
+  "report": {
+    "button": "Report wrong information",
+    "title": "What is wrong on this page?",
+    "placeholder": "For example: the rule changed, or a link doesn't work. Please don't include personal details.",
+    "send": "Send report",
+    "cancel": "Cancel",
+    "sent": "Thank you! Our team will check it against the official source.",
+    "error": "Could not send right now. Please try again later.",
+    "tooShort": "Please write at least 10 characters."
+  },
+  "share": {
+    "whatsapp": "Share on WhatsApp",
+    "print": "Print checklist",
+    "heading": "My Sahaay AI checklist",
+    "docs": "Documents to get:",
+    "schemes": "Schemes to apply for:"
+  },
+  "help": {
+    "nav": "Help near you",
+    "title": "Get help near you",
+    "body": "These official centres help with certificates and applications. Government services are free or have small official fees — never pay agents.",
+    "revenueOffice": "Tehsil / taluk office",
+    "revenueOfficeBody": "Caste, income, residence and other certificates from the revenue department. Many states also offer these online.",
+    "kaCentres": "In Karnataka: Nadakacheri, Grama One, Karnataka One",
+    "kaCentresBody": "Karnataka certificates and Seva Sindhu applications like Gruha Lakshmi and Yuva Nidhi.",
+    "csc": "Common Service Centre (CSC)",
+    "cscBody": "Central schemes such as PM-KISAN, PM Vishwakarma and pension schemes.",
+    "bank": "Your bank branch",
+    "bankBody": "Aadhaar linking for DBT, insurance (PMJJBY, PMSBY), Atal Pension and business loans.",
+    "mapSearch": "Find nearby on map",
+    "official": "Official website",
+    "mapNote": "Map results come from Google Maps. Always check you are at a government office."
+  },
+  "demo": {
+    "nav": "Try an example",
+    "title": "Try an example person",
+    "body": "See Sahaay AI in action with a ready-made person. Their answers load in one click, and you can change them any time.",
+    "fictional": "These people are fictional examples.",
+    "button": "See their schemes",
+    "note": "This replaces the answers saved on this device. Continue?"
+  },
+  "alerts": {
+    "title": "Get alerts for new schemes",
+    "body": "We'll email you when a new scheme matches your answers, or when a deadline is near.",
+    "consent": "Yes, email me scheme alerts. I can turn them off any time.",
+    "consentRequired": "Please tick the box to agree to email alerts.",
+    "button": "Turn on alerts",
+    "sent": "Almost done! Open the link we emailed you to switch on alerts.",
+    "on": "Alerts are on for {email}.",
+    "privacy": "We only use your email for these alerts. No passwords. You can delete your account any time."
+  },
+  "account": {
+    "title": "Your account",
+    "body": "Sign in to save your answers on all your devices and get alerts when a new scheme matches you.",
+    "emailLabel": "Email address",
+    "sendLink": "Send me a sign-in link",
+    "sent": "Check your email and open the link to sign in.",
+    "signedInAs": "Signed in as {email}",
+    "signOut": "Sign out",
+    "alertsLabel": "Email me when a new scheme matches me",
+    "synced": "Your answers are saved to your account.",
+    "deleteAccount": "Delete my account",
+    "deleteAccountConfirm": "Permanently delete your account and all saved data? This cannot be undone.",
+    "accountDeleted": "Your account has been deleted.",
+    "notConfigured": "Accounts are not available yet. Your answers are still saved on this device.",
+    "error": "Something went wrong. Please try again.",
+    "invalidEmail": "Please enter a valid email address.",
+    "callbackWorking": "Signing you in…",
+    "callbackFailed": "This sign-in link is invalid or has expired. Please request a new one.",
+    "admin": "Admin portal",
+    "unavailable": "Sign-in isn't available right now — we can't reach the account service. You can keep using Sahaay without signing in; your answers stay saved on this device.",
+    "rateLimited": "Too many sign-in links were requested. Please wait a few minutes and try again."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications yet. We will tell you when a new scheme matches you.",
+    "markAllRead": "Mark all as read",
+    "new_match": "New scheme you may qualify for: {scheme}",
+    "scheme_updated": "A scheme you qualify for has changed: {scheme}",
+    "deadline": "Deadline coming soon: {scheme}",
+    "view": "View scheme",
+    "signIn": "Sign in to get alerts when new schemes match you.",
+    "bell": "Notifications",
+    "unread": "{count} unread",
+    "emailSubject": "Sahaay AI: {count} update(s) for you",
+    "emailIntro": "Hello! Here are your scheme updates:",
+    "emailFooter": "You get these emails because alerts are on in your Sahaay AI profile. You can turn them off in Profile & settings. Applying for government schemes is free — never pay anyone or share your OTP."
+  }
+}
